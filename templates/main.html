@@ -1,0 +1,15 @@
+{% extends 'flatpages/default.html' %}
+
+<html>
+    <head>
+        <title> Simple SignUp/SignIn app</title>
+    </head>
+    <body>
+    <h2>Страница авторизованного пользователя {{request.user.username}}</h2>
+        <div>
+            <h1><a href="/post/">Simple SignUp/SignIn app</a></h1>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
